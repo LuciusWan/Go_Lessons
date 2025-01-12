@@ -13,7 +13,7 @@ const (
 )
 const (
 	NANCHANG = iota
-	TIANJING
+	TIANJIN
 	HANGZHOU
 )
 
@@ -31,8 +31,10 @@ func main() {
 		b2 = 3.14159265359
 	)
 	const a3 = "I hate you"
-	fmt.Printf("a3的值为%s\na3的类型是%v\n", a3, reflect.TypeOf(a3))
+	//输出类型有两种方式
+	fmt.Printf("a3的值为%s\na3的类型是%T\n", a3, a3)
 	fmt.Printf("a2的值为%s\na2的类型是%v\n", a2, reflect.TypeOf(a2))
+	//输出值的时候可以%f也可以%g，%g的范围更大
 	fmt.Printf("b2的值为%g\nb2的类型是%v\n", b2, reflect.TypeOf(b2))
 	fmt.Println("\n---------------------------------------------------------")
 	fmt.Println(Str1)
@@ -40,7 +42,7 @@ func main() {
 	fmt.Println(Str3)
 	fmt.Println("\n---------------------------------------------------------")
 	fmt.Println(NANCHANG)
-	fmt.Println(TIANJING)
+	fmt.Println(TIANJIN)
 	fmt.Println(HANGZHOU)
 	fmt.Println("\n---------------------------------------------------------")
 	f := 200
