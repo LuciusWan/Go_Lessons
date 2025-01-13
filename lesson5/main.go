@@ -12,7 +12,7 @@ func Integer() {
 	var num16 int16 = math.MaxInt16
 	var num32 int32 = math.MaxInt32
 	var num64 int64 = math.MaxInt64
-	var num int = math.MaxInt
+	var num = math.MaxInt
 	fmt.Printf("num8的大小是%d,num8占的内存是%d,num8的类型是%T\n", num8, unsafe.Sizeof(num8), num8)
 	fmt.Printf("num16的大小是%d,num16占的内存是%d,num16的类型是%T\n", num16, unsafe.Sizeof(num16), num16)
 	fmt.Printf("num32的大小是%d,num32占的内存是%d,num32的类型是%T\n", num32, unsafe.Sizeof(num32), num32)
