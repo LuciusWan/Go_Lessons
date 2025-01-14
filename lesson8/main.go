@@ -21,7 +21,7 @@ func CreatMap() {
 		"第三名": "北京",
 	}
 	fmt.Println(step1)
-	//键值对指针，可以对所指向的键值对进行修改
+	//键值对引用类型，可以对所指向的键值对进行修改
 	var step2 = step1
 	step2["第五名"] = "天津"
 	fmt.Println(step2)
